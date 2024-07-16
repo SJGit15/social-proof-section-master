@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'League Spartan';
+    background-color: white;
+}
+
+.main {
+    display: grid;
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 1300px;
+}
+
+.heading {
+    width: 350px;
+    grid-row: 1 / span 2;
+
+    p {
+        color: hsl(303, 10%, 53%);
+        padding-top: 25px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        color: hsl(300, 43%, 22%);
+        font-size: 50px;
+    }
+}
+
+.review, .guru, .bestTech {
+    background-color: hsl(300, 24%, 96%);
+    grid-column: 2 / span 2;
+    border-radius: 5px;
+
+    width: 400px;
+    height: 50px;
+
+    padding-left: 20px;
+    padding-top: 15px;
+
+    img {
+        float: left;
+        padding: 2px;
+    }
+    
+    p {
+        color:hsl(300, 43%, 22%);
+        font-weight: bold;
+        display: inline-block;
+        padding-top: 3px;
+        padding-left: 30px;
+    }
+}
+
+.review {
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.guru {
+    grid-row: 2 / span 2;
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+.bestTech {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.colton, .irene, .anne {
+    background-color: hsl(300, 43%, 22%);
+    grid-row: 4 / span 1;
+   
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+
+    img {
+        border-radius: 50%;
+        width: 40px;
+        margin-top: 30px;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .name-title {
+        display: inline-block;
+        padding-top: 30px;
+        padding-left: 20px;
+        
+        p:first-of-type {
+            color: white;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        p:nth-of-type(2) {
+            color: hsl(333, 80%, 67%);
+        }
+    }
+
+    :nth-child(3) {
+        color: white;
+        clear: both;
+        padding-top: 20px;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+}
+
+.irene {
+    margin-top: 20px;
+}
+
+.anne {
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .heading {
+        width: 300px;
+        text-align: center;
+    }
+
+    .review, .guru, .bestTech {
+        margin: 0;
+        grid-column: 1 / span 1;
+        width: 250px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 20px;
+
+        .stars {
+            margin-left: 50px;
+        }
+
+        p {
+            padding-top: 10px;
+        }
+    }
+
+    .review {
+        grid-row: 3 / span 1;
+    }
+
+    .guru {
+        grid-row: 4 / span 1;
+    }
+    
+    .bestTech {
+        grid-row: 5 / span 1;
+    }
+
+    .colton, .irene, .anne {
+        margin: 0;
+        width: 250px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .colton {
+        grid-row: 6 / span 1;
+    }
+
+    .irene {
+        grid-row: 7 / span 1;
+    }
+
+    .anne {
+        grid-row: 8 / span 1;
+    }
+}
